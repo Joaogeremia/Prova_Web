@@ -5,7 +5,6 @@ import { CssBaseline, AppBar, Toolbar, Typography, Container } from '@mui/materi
 import PostListPage from './pages/PostListPage';
 import PostDetailPage from './pages/PostDetailPage';
 
-// Cria um tema escuro
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -17,13 +16,10 @@ export default function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <AppBar position="static">
-        {/* Envolvemos a Toolbar com um Container.
-            Isso faz com que o título "Prova ReactJS" fique alinhado
-            com o conteúdo das páginas abaixo, que também usam Container. */}
         <Container maxWidth="lg">
-          <Toolbar disableGutters> {/* disableGutters remove paddings laterais indesejados */}
+          <Toolbar disableGutters>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Prova ReactJS
+              Prova Web
             </Typography>
           </Toolbar>
         </Container>
